@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16569,10 +16569,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U$2" library="torex" deviceset="AP2120" device="" package3d_urn="urn:adsk.eagle:package:6993131/1"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="22u"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u"/>
-<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDIO" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDIO" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDIO" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDIO" device=""/>
@@ -16633,12 +16631,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="U$2" gate="G$1" x="127" y="66.04" smashed="yes">
 <attribute name="NAME" x="119.38" y="73.66" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="P+3" gate="1" x="99.06" y="81.28" smashed="yes">
-<attribute name="VALUE" x="96.52" y="76.2" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C4" gate="G$1" x="99.06" y="58.42" smashed="yes">
-<attribute name="NAME" x="100.203" y="58.9026" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.203" y="53.8226" size="1.778" layer="96"/>
+<instance part="P+3" gate="1" x="106.68" y="81.28" smashed="yes">
+<attribute name="VALUE" x="104.14" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C5" gate="G$1" x="106.68" y="58.42" smashed="yes">
 <attribute name="NAME" x="108.204" y="58.801" size="1.778" layer="95"/>
@@ -16647,9 +16641,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="C6" gate="G$1" x="152.4" y="58.42" smashed="yes">
 <attribute name="NAME" x="153.924" y="58.801" size="1.778" layer="95"/>
 <attribute name="VALUE" x="153.924" y="53.721" size="1.778" layer="96"/>
-</instance>
-<instance part="GND5" gate="G$1" x="99.06" y="45.72" smashed="yes">
-<attribute name="VALUE" x="96.52" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="G$1" x="106.68" y="45.72" smashed="yes">
 <attribute name="VALUE" x="104.14" y="43.18" size="1.778" layer="96"/>
@@ -16708,11 +16699,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="GND4" gate="G$1" pin="GNDIO"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="38.1" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="-"/>
-<pinref part="GND5" gate="G$1" pin="GNDIO"/>
-<wire x1="99.06" y1="48.26" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -16778,14 +16764,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="99.06" y1="60.96" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="+"/>
 <pinref part="U$2" gate="G$1" pin="VIN"/>
-<wire x1="99.06" y1="66.04" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="66.04" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
-<junction x="99.06" y="66.04"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="60.96" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 <junction x="106.68" y="66.04"/>
 </segment>
